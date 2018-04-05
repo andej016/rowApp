@@ -23,7 +23,9 @@ shinyUI(navbarPage(
              rowApp_Tab_SeatRace_QuadSeatRacing,
              rowApp_Tab_SeatRace_FourSeatRacing,
              rowApp_Tab_SeatRace_PairsMatrix
-             )
+             ),
+  navbarMenu("Technical Guidance",
+             rowApp_Tab_TechnicalGuidance_Overview)
   
 )
 )
