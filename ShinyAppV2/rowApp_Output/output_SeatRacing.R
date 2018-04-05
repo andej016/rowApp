@@ -19,3 +19,13 @@ output$quadSeatRacingDownload.xlsx <- downloadHandler(
     file.copy(myfile,file)
   }
 )
+
+output$fourSeatRacingDownload.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("fourSeatRacing","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/fourSeatRacing.xlsx'
+    file.copy(myfile,file)
+  }
+)
