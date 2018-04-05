@@ -9,3 +9,13 @@ output$doubleMatrixDownload.xlsx <- downloadHandler(
     file.copy(myfile,file)
   }
 )
+
+output$quadSeatRacingDownload.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("quadSeatRacing","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/quadSeatRacing.xlsx'
+    file.copy(myfile,file)
+  }
+)

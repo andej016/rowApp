@@ -20,8 +20,8 @@ shinyUI(navbarPage(
              ),
   navbarMenu("Seat Racing Applications",
              rowApp_Tab_SeatRace_DoubleMatrix,
-             rowApp_Tab_SeatRace_PairsMatrix,
              rowApp_Tab_SeatRace_QuadSeatRacing,
+             rowApp_Tab_SeatRace_PairsMatrix,
              rowApp_Tab_SeatRace_FourSeatRacing
              )
   
