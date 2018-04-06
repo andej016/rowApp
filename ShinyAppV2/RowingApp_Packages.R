@@ -2,6 +2,7 @@
 
 list.of.packages <- c(
   "shiny",
+  "XLConnect",
   "xlsx",
   "kimisc",
   "lubridate",
