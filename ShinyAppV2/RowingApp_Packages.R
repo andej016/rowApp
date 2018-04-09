@@ -6,7 +6,8 @@ list.of.packages <- c(
   "xlsx",
   "kimisc",
   "lubridate",
-  "shinyTime"
+  "shinyTime",
+  "shinythemes"
 )
 
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]

@@ -1,7 +1,6 @@
 rowApp_UsefulLinks <-
   tabPanel(
     title = "Useful Links",
-    mainPanel(
       fluidRow(
         column(
           4,
@@ -40,4 +39,3 @@ rowApp_UsefulLinks <-
         )
       )
     )
-  )
