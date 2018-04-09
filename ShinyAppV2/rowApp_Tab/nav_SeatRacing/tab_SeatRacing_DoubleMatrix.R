@@ -3,7 +3,7 @@
 rowApp_Tab_SeatRace_DoubleMatrix <-
   tabPanel(title = "Double Matrix",
            sidebarPanel(
-             downloadLink("doubleMatrixDownload.xlsx", "Double Matrix Download"),
+             downloadButton("doubleMatrixDownload.xlsx", "Double Matrix Download"),
              br(),
              br(),
              paste("For more information or assistance email",

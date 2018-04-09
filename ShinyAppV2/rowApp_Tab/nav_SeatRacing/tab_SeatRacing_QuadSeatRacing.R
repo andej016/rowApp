@@ -3,7 +3,7 @@
 rowApp_Tab_SeatRace_QuadSeatRacing <-
   tabPanel(title = "Quad Seat Racing",
            sidebarPanel(
-             downloadLink("quadSeatRacingDownload.xlsx", "Quad Seat Racing Download"),
+             downloadButton("quadSeatRacingDownload.xlsx", "Quad Seat Racing Download"),
              br(),
              br(),
              paste("For more information or assistance email",
