@@ -1,7 +1,7 @@
 ## Erg App- Erg Distance calculator Tab Output 
 
 rowApp_Tab_ErgApp_ErgDistanceCalculator <-
-  tabPanel(title = "Erg Distance Calculator",
+  tabItem(tabName = "ergDistanceCalculator",
            
            sidebarPanel(
              

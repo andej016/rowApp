@@ -1,7 +1,7 @@
 ## erg to weight adjuster tab output
 
 rowApp_Tab_ErgApp_ErgToWeightAdjuster <- 
-  tabPanel(title = "Erg to Weight Split Adjuster",
+  tabItem(tabName = "ergToWeightSplitAdjuster",
            
            sidebarPanel(
              

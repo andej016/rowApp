@@ -1,7 +1,7 @@
 ## erg split calculator tab output
 
 rowApp_Tab_ErgApp_ErgSplitCalculator <- 
-  tabPanel(title = "Erg Split Calculator",
+  tabItem(tabName = "ergSplitCalculator",
            
            sidebarPanel(
              

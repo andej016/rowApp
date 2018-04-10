@@ -1,10 +1,9 @@
 ##Home page
 
 rowApp_Tab_Home <-
-  tabPanel(
-    title= "Home",
+  tabItem(
+    tabName= "home",
     fluidPage(
-      theme = shinytheme("flatly"),
       #img(src= "MIS_logo_favicon.png", align="right"),
       h1("RowApp: The coaches Best Friend"),
       br(),

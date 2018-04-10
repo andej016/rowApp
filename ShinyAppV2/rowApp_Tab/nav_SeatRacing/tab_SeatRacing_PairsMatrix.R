@@ -1,7 +1,7 @@
 ## Seat Race- Double Matrix
 
 rowApp_Tab_SeatRace_PairsMatrix <-
-  tabPanel(title = "Pairs Matrix",
+  tabItem(tabName = "pairsMatrix",
            sidebarPanel(
             h3('Instructions'),
             br(),

@@ -1,7 +1,7 @@
 ## Seat Race- Double Matrix
 
 rowApp_Tab_SeatRace_DoubleMatrix <-
-  tabPanel(title = "Double Matrix",
+  tabItem(tabName = "doubleMatrix",
            sidebarPanel(
              downloadButton("doubleMatrixDownload.xlsx", "Double Matrix Download"),
              br(),

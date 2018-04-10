@@ -1,7 +1,7 @@
 ## Technical Guidance- Overview
 
 rowApp_Tab_TechnicalGuidance_Overview <-
-  tabPanel(title = "Overview",
+  tabItem(tabName = "overview",
            sidebarPanel(
              br(),
              br(),

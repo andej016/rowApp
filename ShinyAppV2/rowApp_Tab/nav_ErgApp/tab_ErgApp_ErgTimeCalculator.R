@@ -1,7 +1,7 @@
 ## erg time calculator tab output
 
 rowApp_Tab_ErgApp_ErgTimeCalculator <- 
-  tabPanel(title = "Erg Time Calculator",
+  tabItem(tabName = "ergTimeCalculator",
            
            sidebarPanel(
              

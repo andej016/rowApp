@@ -1,7 +1,7 @@
 ## Boat Speed Calculator tab output
 
 rowApp_Tab_BoatSpeedCalculator <- 
-  tabPanel(title = "Boat Speed Calculator",
+  tabItem(tabName = "boatSpeedCalculator",
            sidebarPanel(
              selectInput("boatType","Boat Type:",
                          list("Single"="1x",

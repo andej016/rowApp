@@ -1,6 +1,6 @@
 rowApp_UsefulLinks <-
-  tabPanel(
-    title = "Useful Links",
+  tabItem(
+    tabName = "usefulLinks",
       fluidRow(
         column(
           4,
