@@ -10,9 +10,7 @@ shinyUI(dashboardPage(
   dashboardHeader(title="RowApp",
                   tags$li(
                     class = "dropdown",
-                    tags$a(href="",
-                           tags$img(height="20px",src="rowAppLogo.png")
-                           )
+                    tags$a(tags$img(height="20px",src="rowAppLogo.png"))
                     )
                   ),
   dashboardSidebar(
