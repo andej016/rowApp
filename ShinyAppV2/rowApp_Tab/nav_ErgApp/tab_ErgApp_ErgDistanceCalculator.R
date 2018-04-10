@@ -5,7 +5,7 @@ rowApp_Tab_ErgApp_ErgDistanceCalculator <-
            
            sidebarPanel(
              
-             tags$style(".well {background-color: #99CCFF;}"),
+             tags$style(".well {background-color: #CDF7D9;}"),
              
              timeInput("ergDuration_D","Erg Duration (Hours:Minutes:Seconds):",
                        value = NULL,
