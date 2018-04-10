@@ -6,13 +6,19 @@ source("rowApp_ScriptSourcing/source_TabOutputs.R",local=TRUE)
 
 shinyUI(dashboardPage(
   
+  skin = "green",
   dashboardHeader(title="RowApp"),
   dashboardSidebar(
     sidebarMenu(
-      menuItem("Home",tabName="home",icon=icon("home")),
-      menuItem("Boat Speed Calculator",tabName = "boatSpeedCalculator"),
+      menuItem("Home",
+               tabName="home",
+               icon=icon("home")),
+      menuItem("Boat Speed Calculator",
+               tabName = "boatSpeedCalculator",
+               icon = icon("fighter-jet")),
 
       menuItem("Ergo Applications",
+               icon = icon("calculator"),
                menuItem("Erg Distance Calculator",
                         tabName = 'ergDistanceCalculator'),
                menuItem('Erg Time Calculator',
@@ -23,6 +29,7 @@ shinyUI(dashboardPage(
                         tabName = "ergToWeightSplitAdjuster")
                ),
       menuItem("Seat Racing Applications",
+               icon = icon("users"),
                menuItem("Double Matrix",
                         tabName = "doubleMatrix"),
                menuItem("Quad Seat Racing",
@@ -34,8 +41,11 @@ shinyUI(dashboardPage(
                ),
       menuItem("Technical Guidance",
                menuItem("Overview",
-                        tabName = "overview")),
-      menuItem("Useful Links",tabName="usefulLinks")
+                        tabName = "overview"),
+               icon = icon("superscript")),
+      menuItem("Useful Links",
+               tabName="usefulLinks",
+               icon = icon("link"))
     )
   ),
   dashboardBody(
