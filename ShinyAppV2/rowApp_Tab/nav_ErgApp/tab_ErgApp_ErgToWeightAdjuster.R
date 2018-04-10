@@ -11,7 +11,7 @@ rowApp_Tab_ErgApp_ErgToWeightAdjuster <-
              
              sliderInput("athleteWeight_A","Athletes weight (kg):",
                          min= 40, max= 120, value= 75),
-             
+             submitButton("Update", icon("refresh")),
              br(),
              br(),
              paste("For more information or assistance email",

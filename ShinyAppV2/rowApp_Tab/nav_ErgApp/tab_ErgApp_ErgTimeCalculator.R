@@ -11,7 +11,7 @@ rowApp_Tab_ErgApp_ErgTimeCalculator <-
              
              numericInput("ergDistance_T", "Distance Covered in the Ergo (meters):",
                           min = 250, max = 500000, value = 2000),
-             
+             submitButton("Update", icon("refresh")),
              br(),
              br(),
              paste("For more information or assistance email",

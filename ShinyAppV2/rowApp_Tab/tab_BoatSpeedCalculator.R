@@ -103,6 +103,7 @@ rowApp_Tab_BoatSpeedCalculator <-
                          value = NULL,
                          seconds = TRUE)
              ),
+             submitButton("Update", icon("refresh")),
              br(),
              br(),
              paste("For more information or assistance email",

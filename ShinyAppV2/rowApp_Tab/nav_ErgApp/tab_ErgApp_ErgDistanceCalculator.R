@@ -5,6 +5,8 @@ rowApp_Tab_ErgApp_ErgDistanceCalculator <-
            
            sidebarPanel(
              
+             tags$style(".well {background-color: #99CCFF;}"),
+             
              timeInput("ergDuration_D","Erg Duration (Hours:Minutes:Seconds):",
                        value = NULL,
                        seconds = TRUE),
@@ -12,6 +14,7 @@ rowApp_Tab_ErgApp_ErgDistanceCalculator <-
              timeInput("ergSplit_D","Split- 500m (Hours:Minutes:Seconds):",
                        value = NULL,
                        seconds = TRUE),
+             submitButton("Update", icon("refresh")),
              
              br(),
              br(),
