@@ -7,7 +7,14 @@ source("rowApp_ScriptSourcing/source_TabOutputs.R",local=TRUE)
 shinyUI(dashboardPage(
   
   skin = "green",
-  dashboardHeader(title="RowApp"),
+  dashboardHeader(title="RowApp",
+                  tags$li(
+                    class = "dropdown",
+                    tags$a(href="",
+                           tags$img(height="20px",src="rowAppLogo.png")
+                           )
+                    )
+                  ),
   dashboardSidebar(
     sidebarMenu(
       menuItem("Home",
