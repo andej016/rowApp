@@ -36,6 +36,12 @@ rowApp_UsefulLinks <-
           uiOutput("link_Aylings"),
           uiOutput("link_Burgashell"),
           uiOutput("link_Swift")
+        ),
+        br(),
+        br(),
+        column(
+          4,
+          h3("Race Photographers")
         )
       )
     )
