@@ -57,6 +57,8 @@ rowApp_Tab_RaceResults <-
         br(),
         downloadButton("SHORR2018.xlsx","Schools Head"),
         br(),
+        downloadButton("HeadOfTheTrent.xlsx","Head of the Trent"),
+        br(),
         br(),
         br()
       )

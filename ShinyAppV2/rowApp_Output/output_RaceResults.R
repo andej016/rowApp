@@ -49,6 +49,16 @@ output$SHORR2018.xlsx <- downloadHandler(
   }
 )
 
+output$HeadOfTheTrent.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("HeadOfTheTrent","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/HeadOfTheTrent.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
 output$rr_FilteredRaceResults <- renderDataTable({
   rr_RaceResultsFilterFunction(
     gender = input$rr_Gender,
