@@ -4,6 +4,7 @@ rowApp_Tab_ErgApp_ErgTimeCalculator <-
   tabItem(tabName = "ergTimeCalculator",
            
            sidebarPanel(
+             actionButton("etc_ReportExplanation","Explanation"),
              
              timeInput("ergSplit_T","Split- 500m (Hours:Minutes:Seconds):",
                        value = NULL,

@@ -5,6 +5,8 @@ rowApp_Tab_ErgApp_ErgSplitCalculator <-
            
            sidebarPanel(
              
+             actionButton("esc_ReportExplanation","Explanation"),
+             
              timeInput("ergDuration_S","Erg Duration (Hours:Minutes:Seconds):",
                        value = NULL,
                        seconds = TRUE),

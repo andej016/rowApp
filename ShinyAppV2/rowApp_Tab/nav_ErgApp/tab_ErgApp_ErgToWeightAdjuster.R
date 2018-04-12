@@ -5,6 +5,8 @@ rowApp_Tab_ErgApp_ErgToWeightAdjuster <-
            
            sidebarPanel(
              
+             actionButton("ewa_ReportExplanation","Explanation"),
+             
              timeInput("ergSplit_A","Split- 500m (Hours:Minutes:Seconds):",
                        value = NULL,
                        seconds = TRUE),

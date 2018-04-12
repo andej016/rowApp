@@ -7,6 +7,8 @@ rowApp_Tab_ErgApp_ErgDistanceCalculator <-
              
              tags$style(".well {background-color: #CDF7D9;}"),
              
+             actionButton("edc_ReportExplanation","Explanation"),
+             
              timeInput("ergDuration_D","Erg Duration (Hours:Minutes:Seconds):",
                        value = NULL,
                        seconds = TRUE),
