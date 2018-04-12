@@ -48,6 +48,9 @@ shinyUI(dashboardPage(
                menuItem("Overview",
                         tabName = "overview"),
                icon = icon("superscript")),
+      menuItem("Race Results",
+               tabName = "raceResults",
+               icon = icon("folder-open", lib = "glyphicon")),
       menuItem("Useful Links",
                tabName="usefulLinks",
                icon = icon("link"))
@@ -66,7 +69,8 @@ shinyUI(dashboardPage(
       rowApp_Tab_SeatRace_FourSeatRacing,
       rowApp_Tab_SeatRace_PairsMatrix,
       rowApp_Tab_TechnicalGuidance_Overview,
-      rowApp_UsefulLinks
+      rowApp_Tab_RaceResults,
+      rowApp_Tab_UsefulLinks
     )
   )
 )

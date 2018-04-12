@@ -8,7 +8,8 @@ list.of.packages <- c(
   "lubridate",
   "shinyTime",
   "shinythemes",
-  "shinydashboard"
+  "shinydashboard",
+  "sqldf"
 )
 
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
