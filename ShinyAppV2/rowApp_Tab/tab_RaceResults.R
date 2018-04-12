@@ -4,6 +4,7 @@ rowApp_Tab_RaceResults <-
     fluidRow(
       column(
         4,
+        style = "background-color:#CDF7D9;",
         h3("Find results for a specific crew:"),
         selectInput("rr_Gender","Crew Gender:",
                     list("Male",
@@ -28,7 +29,10 @@ rowApp_Tab_RaceResults <-
         br(),
         paste("For more information or assistance email",
               emailAddress,
-              sep = " ")
+              sep = " "),
+        br(),
+        br(),
+        br()
       ),
       column(
         4,
@@ -37,6 +41,7 @@ rowApp_Tab_RaceResults <-
       ),
       column(
         4,
+        style = "background-color:#CDF7D9;",
         h3(" All Race Result Links"),
         br(),
         br(),
@@ -44,11 +49,16 @@ rowApp_Tab_RaceResults <-
         br(),
         downloadButton("HORR2018.xlsx", "HORR"),
         br(),
-        downloadButton("HOR42018.xlsx", "4s Head"),
+        downloadButton("HOR42018.xlsx", "Fours Head"),
         br(),
         downloadButton("PairsHead2018.xlsx","Pairs Head"),
         br(),
-        downloadButton("ScullersHead2018.xlsx","Scullers Head")
+        downloadButton("ScullersHead2018.xlsx","Scullers Head"),
+        br(),
+        downloadButton("SHORR2018.xlsx","Schools Head"),
+        br(),
+        br(),
+        br()
       )
     )
   )
