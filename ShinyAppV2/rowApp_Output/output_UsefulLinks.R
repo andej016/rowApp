@@ -69,3 +69,18 @@ output$link_Burgashell <- renderUI({
 output$link_Swift <- renderUI({
   a("Swift",href="http://www.rowingcentre.co.uk/")
 })
+output$link_JuniorRowingNews <- renderUI({
+  a("Junior Rowing News",href="http://juniorrowingnews.com/")
+})
+output$link_RowingPhotography <- renderUI({
+  a("Rowing Photography",href="http://rowingphotography.co.uk/")
+})
+output$link_BenRodford <- renderUI({
+  a("Ben Rodford",href="https://benrodford.photoshelter.com/")
+})
+output$link_BigBladePhotography <- renderUI({
+  a("Big Blade Photography", href="http://www.bigblade-photos.com/rowing/")
+})
+output$link_AlCragiePhotography <- renderUI({
+  a("Al Cragie Photography",href="https://www.facebook.com/AlCraigiePhotographer/")
+})

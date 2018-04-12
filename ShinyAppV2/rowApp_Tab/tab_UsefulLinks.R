@@ -10,7 +10,8 @@ rowApp_UsefulLinks <-
           uiOutput("link_DavidBidulph"),
           uiOutput("link_FatSculler"),
           uiOutput("link_WeRow"),
-          uiOutput("link_TidewayBulletin")
+          uiOutput("link_TidewayBulletin"),
+          uiOutput("link_JuniorRowingNews")
           ),
         column(
           4,
@@ -41,7 +42,11 @@ rowApp_UsefulLinks <-
         br(),
         column(
           4,
-          h3("Race Photographers")
+          h3("Race Photographers"),
+          uiOutput("link_RowingPhotography"),
+          uiOutput("link_BenRodford"),
+          uiOutput("link_BigBladePhotography"),
+          uiOutput("link_AlCragiePhotography")
         )
       )
     )
