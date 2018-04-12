@@ -1,7 +1,7 @@
 ##Rowing App
 ##ui.R
-#runApp("C:/Users/joe.anderson/Documents/Rowing/RowingApp/ShinyAppV2")
 
+source("RowingApp_Packages.R",local=TRUE)
 source("rowApp_ScriptSourcing/source_TabOutputs.R",local=TRUE)
 
 shinyUI(dashboardPage(

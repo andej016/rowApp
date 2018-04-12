@@ -38,7 +38,17 @@ rowApp_Tab_RaceResults <-
       column(
         4,
         h3(" All Race Result Links"),
-        downloadButton("HORR2018.xlsx", "HORR 2018")
+        br(),
+        br(),
+        h4("2018 Results"),
+        br(),
+        downloadButton("HORR2018.xlsx", "HORR"),
+        br(),
+        downloadButton("HOR42018.xlsx", "4s Head"),
+        br(),
+        downloadButton("PairsHead2018.xlsx","Pairs Head"),
+        br(),
+        downloadButton("ScullersHead2018.xlsx","Scullers Head")
       )
     )
   )
