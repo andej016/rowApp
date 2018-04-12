@@ -83,3 +83,15 @@ output$text <- renderText({
   )
 })
 
+observeEvent(input$bsc_ReportExplanation,{
+  showModal(modalDialog(
+    title = "Explanation: Boat Speed Calculator",
+    "This calculator gives an estimate of the boat speed of crews based upon the athlete ergo scores and weights ",
+    "based upon historic scores and athlete aggregation.",
+    br(),
+    "To run the report, select the boat type, update the input panel and then input the gender, weights and erg scores of all athletes in the boat.",
+    br(),
+    "Finally, press the update button and the 2k time of the boat will be calculated.",
+    easyClose = TRUE
+  ))
+})

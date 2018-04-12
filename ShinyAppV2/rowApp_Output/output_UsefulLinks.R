@@ -38,7 +38,6 @@ output$link_SimsRowingServices <- renderUI({
 output$link_NKSports <- renderUI({
   a("NK Sports",href="https://nksports.com/")
 })
-
 output$link_Empacher <- renderUI({
   a("Empacher",href="http://www.empacher.de/en/")
 })

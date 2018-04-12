@@ -11,7 +11,8 @@ rowApp_Tab_ErgApp_ErgToWeightAdjuster <-
              
              sliderInput("athleteWeight_A","Athletes weight (kg):",
                          min= 40, max= 120, value= 75),
-             submitButton("Update", icon("refresh")),
+             actionButton("submit_CalculateErgWeight", "Calculate"),
+             # submitButton("Update", icon("refresh")),
              br(),
              br(),
              paste("For more information or assistance email",
@@ -20,6 +21,10 @@ rowApp_Tab_ErgApp_ErgToWeightAdjuster <-
            ),
            
            mainPanel(
+             tags$style(type="text/css",
+                        ".shiny-output-error { visibility: hidden; }",
+                        ".shiny-output-error:before { visibility: hidden; }"
+             ),
              h1("Erg split adapted according to athlete weight"),
              br(),
              strong(textOutput("ergWeightAddaptedSplit_A")),

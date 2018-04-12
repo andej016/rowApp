@@ -218,7 +218,7 @@ output$PairsMatrixDownload.xlsx <- downloadHandler(
     writeWorksheet(wb,t(c('Bow Sider','Total Time','Rank')),sheet="PairsMatrix",startRow = 10,startCol = 1, header = FALSE)
     writeWorksheet(wb,bowSiders,sheet="PairsMatrix",startRow = 11,startCol = 1, header = FALSE)
     writeWorksheet(wb,t(c('Stroke Sider','Total Time','Rank')),sheet="PairsMatrix",startRow = 10,startCol = 6, header = FALSE)
-    writeWorksheet(wb,bowSiders,sheet="PairsMatrix",startRow = 11,startCol = 6, header = FALSE)
+    writeWorksheet(wb,strokeSiders,sheet="PairsMatrix",startRow = 11,startCol = 6, header = FALSE)
     for(col in 1:ncol(FormattedSchedule)){
       if(col <= 25){
         timediffFormula <- paste('(',

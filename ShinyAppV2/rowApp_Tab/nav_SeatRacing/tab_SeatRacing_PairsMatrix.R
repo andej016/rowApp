@@ -7,15 +7,11 @@ rowApp_Tab_SeatRace_PairsMatrix <-
             br(),
             "1: Enter the numbers of bow and stroke siders with the sliders (right).",
             br(),
-            "2: Update the page with the button to the right of these sliders.",
+            "2: Enter the athlete names in boxes (Right).",
             br(),
-            "3: Enter the athlete names in boxes (Right).",
+            "3: Enter the boat names to be used (far right).",
             br(),
-            "4: Enter the boat names to be used (far right).",
-            br(),
-            "5: Press Update button at the bottem.",
-            br(),
-            "6: Download the excel sheet for the pair matrix with the link below.",
+            "4: Download the excel sheet for the pair matrix with the link below.",
             br(),
             br(),
             downloadButton("PairsMatrixDownload.xlsx","Download Pair Matrix Excel"),
@@ -37,11 +33,6 @@ rowApp_Tab_SeatRace_PairsMatrix <-
                  4,
                  sliderInput("pairmat_NumberOfBowSiders","Number of Bow Siders:",
                              min = 1, max = 12, value = 4)
-               ),
-               column(
-                 4,
-                 br(),
-                 submitButton("Submit Athlete Numbers", icon("refresh"))
                )
              ),
              br(),
@@ -191,8 +182,8 @@ rowApp_Tab_SeatRace_PairsMatrix <-
                    textInput('pairmat_pair12','12th Pair Name:',value= 'Boat Name')
                  )
                )
-             ),
+             )
             
-             submitButton("Produce Excel Sheet", icon("refresh"))
+             # submitButton("Produce Excel Sheet", icon("refresh"))
            )
   )

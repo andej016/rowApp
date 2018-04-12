@@ -3,6 +3,7 @@
 rowApp_Tab_BoatSpeedCalculator <- 
   tabItem(tabName = "boatSpeedCalculator",
            sidebarPanel(
+             actionButton("bsc_ReportExplanation","Explanation"),
              selectInput("boatType","Boat Type:",
                          list("Single"="1x",
                               "Double" = "2x",
@@ -103,7 +104,6 @@ rowApp_Tab_BoatSpeedCalculator <-
                          value = NULL,
                          seconds = TRUE)
              ),
-             submitButton("Update", icon("refresh")),
              br(),
              br(),
              paste("For more information or assistance email",
