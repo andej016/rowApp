@@ -1,34 +1,47 @@
 ## erg split calculator tab output
 
-rowApp_Tab_ErgApp_ErgSplitCalculator <- 
+rowApp_Tab_ErgApp_ErgSplitCalculator <-
   tabItem(tabName = "ergSplitCalculator",
-           
-           sidebarPanel(
-             
-             actionButton("esc_ReportExplanation","Explanation"),
-             
-             timeInput("ergDuration_S","Erg Duration (Hours:Minutes:Seconds):",
-                       value = NULL,
-                       seconds = TRUE),
-             
-             numericInput("ergDistance_S", "Distance Covered in the Ergo (meters):",
-                          min = 250, max = 500000, value = 2000),
-             actionButton("submit_CalculateErgSplit", "Calculate"),
-             # submitButton("Update", icon("refresh")),
-             br(),
-             br(),
-             paste("For more information or assistance email",
-                   emailAddress,
-                   sep = " ")
-             
-           ),
-           
-           mainPanel(
-             h1("Estimation of the Split (Ave 500m) of the the Erg"),
-             br(),
-             strong(textOutput("ergAppSplit_S")),
-             br(),
-             em("Note: Splits are rounded to the nearest second, not to decimals.")
-           )
-           
+          sidebarPanel(
+            div(
+              class = "view-split-nav view-split-block",
+              div(
+                class = "page-header",
+                actionLink(
+                  "esc_ReportExplanation",
+                  span("", class="fa fa-info-circle fa-lg"),
+                  class="pull-right",
+                  title = "Report Explanation"
+                ),
+                h1("Erg Split Calculator")
+              ),
+              timeInput("ergDuration_S","Erg Duration (Hours:Minutes:Seconds):",
+                        value = strptime("00:08:00",format = "%H:%M:%S"),
+                        seconds = TRUE),
+              
+              numericInput("ergDistance_S", "Distance Covered in the Ergo (meters):",
+                           min = 250, max = 500000, value = 2000),
+              br(),
+              br(),
+              paste("For more information or assistance email",
+                    emailAddress,
+                    sep = " ")
+            )
+          ),
+          mainPanel(
+            div(
+              class = "view-split-content view-split-block",
+              div(
+                class="panel panel-primary panel-metric panel-metric-lg",
+                div(
+                  class="panel-body bg-primary",
+                  h3("Erg Split (Ave 500):"),
+                  div(
+                    class = "text-display-2",
+                    h2(textOutput("ergAppSplit_S", inline=TRUE)), HTML("&nbsp;")
+                  )
+                )
+              )
+            )
+          )
   )

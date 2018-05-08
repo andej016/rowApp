@@ -2,7 +2,7 @@
 
 output$averageErg <- renderText({
   paste(
-    "The average 2k erg time of the crew is: ",
+    #"The average 2k erg time of the crew is: ",
     seconds.to.hms(
       if(input$boatType == '1x'){
         (hour(input$stroke2k)*3600)+(minute(input$stroke2k)*60)+(second(input$stroke2k))
@@ -24,7 +24,7 @@ output$averageErg <- renderText({
 })
 output$averageCrewWeight <- renderText({
   paste(
-    "The average weight of the crew in kg is: ",
+    #"The average weight of the crew in kg is: ",
     if(input$boatType == '1x'){as.integer(input$strokeweight)}
     else if(input$boatType %in% c('2x','2-')){mean(as.integer(c(input$strokeweight,
                                                                 input$bowweight)))}
@@ -46,7 +46,6 @@ output$averageCrewWeight <- renderText({
 
 output$text <- renderText({
   paste(
-    "The predicted 2k time on the water for this crew is: ",
     ErgToBoatSpeedCalculator(if(input$boatType == '1x'){as.integer(input$strokeweight)}
                              else if(input$boatType %in% c('2x','2-')){mean(as.integer(c(input$strokeweight, input$bowweight)))}
                              else if(input$boatType %in% c('4x','4-')){mean(as.integer(c(input$strokeweight,
