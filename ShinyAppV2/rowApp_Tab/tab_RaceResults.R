@@ -41,7 +41,7 @@ rowApp_Tab_RaceResults <-
         "If you leave this club name filter as 'All' then it will find all results for the gender and boat type you requested.",
         br(),
         h3(" All Race Result Links"),
-        h4("2018 Results"),
+        h4("2017/2018 Results"),
         downloadButton("HORR2018.xlsx", "HORR"),
         br(),
         downloadButton("HOR42018.xlsx", "Fours Head"),
