@@ -58,6 +58,8 @@ rowApp_Tab_RaceResults <-
         br(),
         downloadButton("JuniorScullingHead.xlsx","Junior Sculling Head", class = "butt"),
         br(),
+        downloadButton("BUCSHead.xlsx","BUCS Head", class = "butt"),
+        br(),
         br(),
         br(),
         paste("For more information or assistance email",

@@ -23,7 +23,6 @@ rr_RaceResultsFilterFunction <- function(gender,BoatType,ClubName){
                                            [Club],
                                            [Boat.Type],
                                            [Sub.Category],
-                                           [Time],
                                            [Rank],
                                            [Event] 
                                            FROM
