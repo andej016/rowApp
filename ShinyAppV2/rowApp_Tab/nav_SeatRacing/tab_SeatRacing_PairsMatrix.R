@@ -3,23 +3,30 @@
 rowApp_Tab_SeatRace_PairsMatrix <-
   tabItem(tabName = "pairsMatrix",
            sidebarPanel(
-            h3('Instructions'),
-            br(),
-            "1: Enter the numbers of bow and stroke siders with the sliders (right).",
-            br(),
-            "2: Enter the athlete names in boxes (Right).",
-            br(),
-            "3: Enter the boat names to be used (far right).",
-            br(),
-            "4: Download the excel sheet for the pair matrix with the link below.",
-            br(),
-            br(),
-            downloadButton("PairsMatrixDownload.xlsx","Download Pair Matrix Excel"),
-            br(),
-            br(),
-            paste("For more information or assistance email",
-                  emailAddress,
-                  sep = " ")
+             div(
+               class = "view-split-nav view-split-block",
+               div(
+                 class = "page-header",
+                 h1("Pairs Matrix")
+               ),
+               h3('Instructions'),
+               br(),
+               "1: Enter the numbers of bow and stroke siders with the sliders (right).",
+               br(),
+               "2: Enter the athlete names in boxes (Right).",
+               br(),
+               "3: Enter the boat names to be used (far right).",
+               br(),
+               "4: Download the excel sheet for the pair matrix with the link below.",
+               br(),
+               br(),
+               downloadButton("PairsMatrixDownload.xlsx", label = "Pairs Matrix Sheet Download",class= "butt"),
+               br(),
+               br(),
+               paste("For more information or assistance email",
+                     emailAddress,
+                     sep = " ")
+             )
            ),
            mainPanel(
              br(),
