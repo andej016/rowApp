@@ -3,6 +3,7 @@
 rowApp_Tab_BoatSpeedCalculator <- 
   tabItem(tabName = "boatSpeedCalculator",
           sidebarPanel(
+            id="sidebar",
             div(
               class = "view-split-nav view-split-block",
               div(

@@ -3,6 +3,7 @@
 rowApp_Tab_ErgApp_ErgToWeightAdjuster <-
   tabItem(tabName = "ergToWeightSplitAdjuster",
           sidebarPanel(
+            id="sidebar",
             div(
               class = "view-split-nav view-split-block",
               div(

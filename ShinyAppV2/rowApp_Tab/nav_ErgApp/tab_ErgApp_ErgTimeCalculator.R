@@ -3,6 +3,7 @@
 rowApp_Tab_ErgApp_ErgTimeCalculator <-
   tabItem(tabName = "ergTimeCalculator",
           sidebarPanel(
+            id="sidebar",
             div(
               class = "view-split-nav view-split-block",
               div(

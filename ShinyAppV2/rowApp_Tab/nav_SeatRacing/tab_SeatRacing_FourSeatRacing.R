@@ -3,6 +3,7 @@
 rowApp_Tab_SeatRace_FourSeatRacing <-
   tabItem(tabName = "fourSeatRacing",
           sidebarPanel(
+            id="sidebar",
             div(
               class = "view-split-nav view-split-block",
               div(

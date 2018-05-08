@@ -3,6 +3,7 @@
 rowApp_Tab_SeatRace_PairsMatrix <-
   tabItem(tabName = "pairsMatrix",
            sidebarPanel(
+             id="sidebar",
              div(
                class = "view-split-nav view-split-block",
                div(

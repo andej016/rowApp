@@ -1,10 +1,25 @@
 rowApp_Tab_RaceResults <-
   tabItem(
+    tags$head(tags$style(
+      HTML('
+           #sidebar {
+           background-color: #CDF7D9;
+           }
+           
+           body, label, input, button, select { 
+           font-family: "Arial";
+           }')
+  )),
     tabName = "raceResults",
-    fluidRow(
-      column(
-        4,
-        style = "background-color:#CDF7D9;",
+    sidebarPanel(
+      id="sidebar",
+      div(
+        class = "view-split-nav view-split-block",
+        div(
+          class = "page-header",
+          h1("Race Results")
+        ),
+        
         h3("Find results for a specific crew:"),
         selectInput("rr_Gender","Crew Gender:",
                     list("Male",
@@ -21,32 +36,12 @@ rowApp_Tab_RaceResults <-
                          "Four",
                          "Coxed Four",
                          "Eight")),
-        "If you leave this club name filter as 'All' then it will find all results for the gender and boat type you requested.",
         textInput("rr_ClubName","Club Name:",
                   value = 'All'),
+        "If you leave this club name filter as 'All' then it will find all results for the gender and boat type you requested.",
         br(),
-        br(),
-        br(),
-        paste("For more information or assistance email",
-              emailAddress,
-              sep = " "),
-        br(),
-        br(),
-        br()
-      ),
-      column(
-        4,
-        h3("Specifc crew Results:"),
-        dataTableOutput("rr_FilteredRaceResults")
-      ),
-      column(
-        4,
-        style = "background-color:#CDF7D9;",
         h3(" All Race Result Links"),
-        br(),
-        br(),
         h4("2018 Results"),
-        br(),
         downloadButton("HORR2018.xlsx", "HORR"),
         br(),
         downloadButton("HOR42018.xlsx", "Fours Head"),
@@ -60,7 +55,33 @@ rowApp_Tab_RaceResults <-
         downloadButton("HeadOfTheTrent.xlsx","Head of the Trent"),
         br(),
         br(),
+        br(),
+        paste("For more information or assistance email",
+              emailAddress,
+              sep = " "),
+        br(),
         br()
       )
+      ),
+      mainPanel(
+        div(
+          class = "view-split-content view-split-block",
+          div(
+            class="page-header",
+            h1(
+              HTML("<i class='fa fa-ship text-muted'></i>"),
+              "Filtered Results"
+            )
+          ),
+          div(
+            class="panel panel-default",
+            div(
+              class="panel-heading",
+              "Race Results for crews meeting filter soecifications"
+            ),
+            dataTableOutput("rr_FilteredRaceResults")
+            #,downloadButton("fr_IntraFleetRankingReport.csv", "Download Data")
+          )
+        )
+      )
     )
-  )
