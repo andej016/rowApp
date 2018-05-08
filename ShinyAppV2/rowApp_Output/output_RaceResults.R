@@ -69,6 +69,16 @@ output$WallingfordRegatta.xlsx <- downloadHandler(
   }
 )
 
+output$JuniorScullingHead.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("JuniorScullingHead","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/JuniorScullingHead2018.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
 output$rr_FilteredRaceResults <- renderDataTable({
   rr_RaceResultsFilterFunction(
     gender = input$rr_Gender,
