@@ -60,7 +60,11 @@ rowApp_Tab_RaceResults <-
             br(),
             downloadButton("BUCSHead.xlsx","BUCS Head", class = "butt"),
             br(),
-            downloadButton("WallingfordRegatta.xlsx","Wallingford Regatta", class = "butt")
+            downloadButton("WallingfordRegatta.xlsx","Wallingford Regatta", class = "butt"),
+            br(),
+            downloadButton("JuniorScullingHead.xlsx","Junior Sculling Head", class = "butt"),
+            br(),
+            downloadButton("JuniorScullingRegattaTimeTrial2018.xlsx","Junior Sculling Regatta", class = "butt")
           ),
           div(
             class = "col-md-6",
@@ -70,13 +74,19 @@ rowApp_Tab_RaceResults <-
             br(),
             downloadButton("StrathclydeParkRegatta2018.xlsx","Strathclyde Park Regatta", class = "butt"),
             br(),
-            downloadButton("JuniorScullingHead.xlsx","Junior Sculling Head", class = "butt"),
+            downloadButton("QuintinHead2018.xlsx","Quintin Head", class = "butt"),
             br(),
             downloadButton("Rutherford2017.xlsx","Rutherford Head", class = "butt"),
             br(),
             downloadButton("ChesterLDS2018.xlsx","Chester LDS", class = "butt"),
             br(),
-            downloadButton("Henley4sAnd8sHead2017.xlsx","Henley 4s and 8s Head", class = "butt")
+            downloadButton("Henley4sAnd8sHead2017.xlsx","Henley 4s and 8s Head", class = "butt"),
+            br(),
+            downloadButton("YorkSmallBoatsHead2017.xlsx","York Small Boats Head", class = "butt"),
+            br(),
+            downloadButton("HenleyLongDistanceSculls2017.xlsx","Henley Long Distance Sculls", class = "butt"),
+            br(),
+            downloadButton("NovemberTrialsGB.xlsx","GB November Trials", class = "butt")
           )
         ),
         br(),

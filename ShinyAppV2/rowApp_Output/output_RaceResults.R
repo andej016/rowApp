@@ -149,6 +149,56 @@ output$StrathclydeParkRegatta2018.xlsx <- downloadHandler(
   }
 )
 
+output$YorkSmallBoatsHead2017.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("YorkSmallBoatsHead","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/YorkSmallBoatsHead2017.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
+output$QuintinHead2018.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("QuintinHead","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/QuintinHead2018.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
+output$HenleyLongDistanceSculls2017.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("HenleyLongDistanceSculls","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/HenleyLongDistanceSculls2017.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
+output$JuniorScullingRegattaTimeTrial2018.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("JuniorScullingRegattaTimeTrial","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/JuniorScullingRegattaTimeTrial2018.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
+output$NovemberTrialsGB.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("NovemberTrialsGB","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/Trials/NovemberTrialsGB.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
 output$rr_FilteredRaceResults <- renderDataTable({
   rr_RaceResultsFilterFunction(
     gender = input$rr_Gender,
