@@ -14,6 +14,11 @@ rowApp_Tab_Home <-
         )
       ),
       hr(),
+      div(
+        class = "row",
+        img(src = "rowingFinalSideOn.png",align = "center", height = "200px", width = "600px")
+      ),
+      hr(),
       p("This site is developed to aid both coaches and athletes in analysing, assesing and improving performance."),
       p("It aims to include as many useful functions for coaches as possible in an attempt to encompass all a coaches technical needs."),
       p("Current Functionality includes:"),
