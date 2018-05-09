@@ -44,6 +44,8 @@ rowApp_Tab_RaceResults <-
         h4("2017/2018 Results"),
         downloadButton("HORR2018.xlsx", "HORR", class = "butt"),
         br(),
+        downloadButton("WeHORR2018.xlsx","WeHORR", class = "butt"),
+        br(),
         downloadButton("HOR42018.xlsx", "Fours Head", class = "butt"),
         br(),
         downloadButton("PairsHead2018.xlsx","Pairs Head", class = "butt"),
