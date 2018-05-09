@@ -99,6 +99,56 @@ output$WeHORR2018.xlsx <- downloadHandler(
   }
 )
 
+output$ChesterLDS2018.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("ChesterLDS","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/ChesterLDS2018.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
+output$WallingfordHead2018.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("WallingfordHead","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/WallingfordHead2018.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
+output$Henley4sAnd8sHead2017.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("Henley4sAnd8sHead","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/Henley4sAnd8sHead2017.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
+output$Rutherford2017.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("RutherfordHead","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/RutherfordHead2017.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
+output$StrathclydeParkRegatta2018.xlsx <- downloadHandler(
+  filename <- function(){
+    paste("StrathclydeParkRegatta","xlsx",sep=".")
+  },
+  content <- function(file){
+    myfile <- scrpath <- 'rowApp_Spreadsheets/RaceResults/2018/StrathclydeParkRegatta.xlsx'
+    file.copy(myfile,file)
+  }
+)
+
 output$rr_FilteredRaceResults <- renderDataTable({
   rr_RaceResultsFilterFunction(
     gender = input$rr_Gender,
